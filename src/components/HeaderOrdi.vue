@@ -37,7 +37,7 @@ export default {
                     <h3 class="text-header">La voiture</h3>
                 </router-link>
                 <router-link to="/sponsors" class="lien">
-                    <h3 class="text-header">La voiture</h3>
+                    <h3 class="text-header">Les sponsors</h3>
                 </router-link>
             </div>
         </div>
