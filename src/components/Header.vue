@@ -99,7 +99,7 @@ export default {
 
 <style>
 
-@media screen and (min-width: 500) {
+@media screen and (min-width: 500px) {
   .Header-mobile{
     display: block;
   }
