@@ -1,2 +1,8 @@
 @import './base.css';
 
+body {
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
