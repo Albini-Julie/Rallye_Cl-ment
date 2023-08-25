@@ -1,12 +1,10 @@
 <template>
     
       <svg
-        width="160"
-        height="54"
         viewBox="0 0 160 54"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        style="width: 160px; height: 52.28px;"
+        style="width: 140px; height: 52.28px;"
         preserveAspectRatio="none"
       >
         <path
@@ -24,7 +22,7 @@
         ></path>
       </svg>
       <p
-        style="width: 151px; font-size: 40px; font-weight: 200; text-align: center; color: #000; font-family: Raleway; margin-top: 10px">
+        style="width: 140px; font-size: 30px; font-weight: 200; text-align: center; color: #000; font-family: Raleway; margin-top: 10px">
         CA
       </p>
     
