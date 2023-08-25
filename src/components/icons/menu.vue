@@ -5,7 +5,7 @@
   viewBox="0 0 27 19"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
-  style="width: 25px; height: 17.43px;"
+  style="width: 30px; height: 22.43px;"
   preserveAspectRatio="none"
 >
   <path d="M1.35916 1.0567H26.3576H1.35916Z" fill="#333333"></path>
