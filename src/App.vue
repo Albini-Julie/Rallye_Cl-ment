@@ -4,9 +4,13 @@ import HeaderOrdi from "./components/HeaderOrdi.vue"
 </script>
 
 <template>
-  <HeaderOrdi/>
+  <body>
+    <HeaderOrdi class="Header-ordi"/>
+  </body>
   <RouterView />
 </template>
 
 <style>
+
+
 </style>
