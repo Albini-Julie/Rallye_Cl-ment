@@ -1,7 +1,9 @@
-<script>
+<script >
 import Logo from "../components/icons/logo.vue";
-import Menu from "../components/icons/menu.vue";
-import Croix from "../components/icons/croix.vue"
+import Logomobile from "../components/icons/logo-mobile.vue";
+import LogomobileBlanc from "../components/icons/logo-mobile-blanc.vue";
+import Menu from "@/components/icons/menu.vue";
+import Croix from "@/components/icons/croix.vue"
 
 export default {
   data: function () {
@@ -13,6 +15,8 @@ export default {
     Menu,
     Croix,
     Logo,
+    Logomobile,
+    LogomobileBlanc
   }
 }
 </script>
@@ -41,19 +45,49 @@ export default {
 
 <!-- HEADER MOBILE-->
     <div class="Header-mobile">
-        <button class="bouton " style="  z-index: 50;" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert " 
-            :style="[menuOuvert ? '' : '',]">
-                <Menu />
-        </button> 
+  <!--Header ouvert-->
+      <div style="display: flex; justify-content: space-between; align-items: start;">
+        <div>
+          <router-link class="lien" to="/">
+            <Logomobile/>
+          </router-link>
+        </div>
+        <div class="place-bouton">
+          <button class="bouton " style="  z-index: 50;" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert " 
+              :style="[menuOuvert ? '' : '',]">
+                  <Menu />
+          </button> 
+        </div>
+      </div>
 
+  <!--Header fermé-->
         <div style="position: fixed; inset: 0px; transform: translateX(1050px); z-index: 50; transition-duration: 1000ms;" 
         :style="['background-color:black; color:white', menuOuvert ? 'transform: translateX(0px);' : '',]">
                 <ul @click="menuOuvert = !menuOuvert ">
-                        <button class="bouton" style=" z-index: 50;" aria-controls="menu" :aria-expanded="menuOuvert" 
+                  <div style="display: flex; justify-content: space-between; align-items: start;">
+                    <div style="margin-right:40px; margin-top:10px;">
+                      <router-link class="lien" to="/">
+                        <LogomobileBlanc/>
+                      </router-link>
+                    </div>
+                      <div class="place-bouton">
+                        <button class="bouton" style="margin-right:40px; margin-top:10px; z-index: 50;" aria-controls="menu" :aria-expanded="menuOuvert" 
                             :style="[menuOuvert ? 'visibility:visible' : '',]">
                             <Croix />
                             <span class="sr-only">Menu</span>
                         </button> 
+                      </div>
+                  </div>
+
+                  <router-link to="/pilote" class="lien">
+                    <h3 class="text-header" style="color:white; margin-top:50px">Le pilote</h3>
+                  </router-link>
+                  <router-link to="/voiture" class="lien">
+                    <h3 class="text-header" style="color:white; margin-top:50px; margin-bottom: 50px;">La voiture</h3>
+                  </router-link>
+                  <router-link to="/sponsors" class="lien">
+                    <h3 class="text-header" style="color:white">Les sponsors</h3>
+                  </router-link>
                 </ul>
         </div>
     </div>
@@ -85,9 +119,21 @@ export default {
   }
 }
 
+.Header-ordi{
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .bouton{
     background: none;
     border:none;
+}
+
+.place-bouton{
+  display: flex;
+  justify-content: end;
 }
 
 .Header{
