@@ -30,15 +30,21 @@ export default {
                 <Logo/>
             </div>
             <div style="display: flex; width: 60%; justify-content: space-around;">
+              <div class="soulignage">
                 <router-link to="/pilote" class="lien">
                     <h3 class="text-header">Le pilote</h3>
                 </router-link>
+              </div>
+              <div class="soulignage">
                 <router-link to="/voiture" class="lien">
                     <h3 class="text-header">La voiture</h3>
                 </router-link>
+              </div>
+              <div class="soulignage">
                 <router-link to="/sponsors" class="lien">
                     <h3 class="text-header">Les sponsors</h3>
                 </router-link>
+              </div>
             </div>
         </div>
     </div>
@@ -126,6 +132,13 @@ export default {
   margin-bottom: 30px;
 }
 
+.Header-mobile{
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .bouton{
     background: none;
     border:none;
@@ -162,6 +175,16 @@ export default {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+h3 {
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  transition: background-size .5s;
+}
+
+h3:hover {
+  background-size: 100% 100%;
 }
 
 </style>
