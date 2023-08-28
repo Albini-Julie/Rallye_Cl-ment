@@ -6,3 +6,40 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+
+@media screen and (min-width: 200px) {
+    .titre {
+        font-size: 25px;
+        font-family: Raleway;
+        font-weight: 100;
+    }
+
+
+    .text {
+        font-size: 12px;
+        font-family: Montserrat;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .text {
+        font-size: 15px;
+        font-family: Montserrat;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .text {
+        font-size: 18px;
+        font-family: Montserrat;
+    }
+
+    .titre {
+        font-size: 35px;
+        font-family: Raleway;
+        font-weight: 100;
+    }
+}
