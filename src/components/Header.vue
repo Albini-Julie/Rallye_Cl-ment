@@ -177,13 +177,13 @@ export default {
     border-width: 0;
 }
 
-h3 {
+.text-header {
   text-decoration: none;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
   transition: background-size .5s;
 }
 
-h3:hover {
+.text-header:hover {
   background-size: 100% 100%;
 }
 
