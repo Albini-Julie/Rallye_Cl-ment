@@ -33,6 +33,20 @@ body {
 @media screen and (min-width: 1024px) {
 
     .text {
+        font-size: 15px;
+        font-family: Montserrat;
+    }
+
+    .titre {
+        font-size: 25px;
+        font-family: Raleway;
+        font-weight: 100;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .text {
         font-size: 18px;
         font-family: Montserrat;
     }
