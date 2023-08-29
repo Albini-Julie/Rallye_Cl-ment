@@ -40,7 +40,7 @@ import Header from "../components/Header.vue";
       <div class="onglet">
         <router-link class="onglet-lien" to="/voiture">
           <div class="onglet-image-div">
-            <img class="onglet-image onglet-image-voiture" src="/onglet-voiture.jpg" alt="image d'une voiture de rallye"/>
+            <div class="onglet-voiture-image"></div>
           </div>
           <h3 class="titre onglet-titre">La voiture</h3>
         </router-link>
@@ -49,8 +49,8 @@ import Header from "../components/Header.vue";
       <!--Bloc sponsors-->
       <div class="onglet">
         <router-link class="onglet-lien" to="/sponsors">
-          <div class="onglet-image-div">
-            <img class="onglet-image onglet-image-sponsors" src="/onglet-sponsors.jpg" alt="image d'une collection de voitures"/>
+           <div class="onglet-image-div">
+            <div class="onglet-sponsors-image"></div>
           </div>
           <h3 class="titre onglet-titre">Les sponsors</h3>
         </router-link>
@@ -119,6 +119,13 @@ import Header from "../components/Header.vue";
 .onglet-image{
     width: 60%;
   }
+
+  .bloc-onglets{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 }
 
 @media screen and (min-width: 1024px) {
@@ -152,12 +159,6 @@ import Header from "../components/Header.vue";
 
 .onglet-image{
   width: 80%;
-}
-
-.bloc-onglets{
-  margin-top: 50px;
-  display: flex;
-
 }
 
 .onglet-image-div{
@@ -198,6 +199,26 @@ import Header from "../components/Header.vue";
 
 .onglet-pilote-image:hover {
       background: url("/onglet-pilote-couleurs.jpg") no-repeat;
+    }
+
+.onglet-voiture-image{
+      width: 300px;
+      height: 300px;
+      background: url("/onglet-voiture.jpg") no-repeat;
+}
+
+.onglet-voiture-image:hover {
+      background: url("/onglet-voiture-couleurs.jpg") no-repeat;
+    }
+
+.onglet-sponsors-image{
+      width: 300px;
+      height: 300px;
+      background: url("/onglet-sponsors.jpg") no-repeat;
+}
+
+.onglet-sponsors-image:hover {
+      background: url("/onglet-sponsors-couleurs.jpg") no-repeat;
     }
 
 </style>
