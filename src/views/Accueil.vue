@@ -1,6 +1,7 @@
 <script setup>
 import Header from "../components/Header.vue";
-import DossierSponsors from "../components/Dossier-sponsors.vue"
+import DossierSponsors from "../components/Dossier-sponsors.vue";
+import Footer from "../components/Footer.vue"
 
 </script>
 
@@ -58,9 +59,12 @@ import DossierSponsors from "../components/Dossier-sponsors.vue"
     </div>
 
     <!--Cadre dossier sponsor-->
-    <div style="display: flex; justify-content: center;">
+    <div class="Marge" style="display: flex; justify-content: center;">
       <DossierSponsors/>
     </div>
+
+    <!--Footer-->
+    <Footer/>
 
 </template>
 
