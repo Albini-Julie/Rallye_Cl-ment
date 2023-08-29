@@ -21,7 +21,7 @@
         ></path>
       </svg>
       <p
-        style="width: 200px; font-size: 50px; font-weight: 200; text-align: center; color: #FFF; font-family: Raleway; margin-top: 10px">
+        style="width: 200px; font-size: 50px; font-weight: 200; text-align: center; color: #FFF; font-family: Raleway; margin-top: 10px; margin-bottom: 0px;">
         CA
       </p>
 
