@@ -1,6 +1,6 @@
 <script setup>
 import Header from "../components/Header.vue";
-
+import DossierSponsors from "../components/Dossier-sponsors.vue"
 
 </script>
 
@@ -10,7 +10,7 @@ import Header from "../components/Header.vue";
     <Header class="Header-ordi"/>
 
     <!--Tagline-->
-    <h2 class="titre citation Marge" style="margin-bottom: 50px; display:flex ; justify-content: center; font-style: italic;">« Le rallye est plus qu’une passion... »</h2>
+    <h2 class="titre citation Marge" style="display:flex ; justify-content: center; font-style: italic;">« Le rallye est plus qu’une passion... »</h2>
 
     <!--Rectangle noir présentateur-->
     <div style=" background-color: black; padding-top:40px; padding-bottom:40px;">
@@ -57,8 +57,10 @@ import Header from "../components/Header.vue";
        </div> 
     </div>
 
-
-
+    <!--Cadre dossier sponsor-->
+    <div style="display: flex; justify-content: center;">
+      <DossierSponsors/>
+    </div>
 
 </template>
 
@@ -67,6 +69,10 @@ import Header from "../components/Header.vue";
 @media screen and (min-width: 200px) {
   .citation{
     font-size:22px;
+  }
+
+  .Marge{
+    margin-bottom: 50px;
   }
 
   .titre-centre{
@@ -81,7 +87,7 @@ import Header from "../components/Header.vue";
 }
 
   .image{
-      width:100%
+      width:80%
   }
 
   .espacement{
