@@ -27,7 +27,9 @@ export default {
     <div class="Header-ordi">
         <div style="display: flex; justify-content: space-between;">
             <div style="width: 40%;">
+              <router-link style="text-decoration: none;" to="/">
                 <Logo/>
+              </router-link>
             </div>
             <div style="display: flex; width: 60%; justify-content: space-around;">
               <div class="soulignage">
