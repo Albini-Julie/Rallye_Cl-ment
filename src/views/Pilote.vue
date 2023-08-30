@@ -1,17 +1,43 @@
 <script setup>
-import Header from "../components/Header.vue"
+import Header from "../components/Header.vue";
 </script>
 
 <template>
+    <!--Header-->
     <Header/>
+
+    <!--Bloc de présentation-->
     <div class="bloc-clement">
+        <!--Images des pilotes-->
         <div class="bloc-clement-images">
             <img class="image-pilote" src="/pilote-1.jpg" alt="image d'un pilote de course"/>
             <img class="image-pilote" src="/pilote-2.jpg" alt="image d'un pilote de course"/>
         </div>
+        <!--Titres et textes-->
         <div class="bloc-clement-texte">
             <h3 class="titre titre-clement">Clément Albini</h3>
             <p class="text texte-clement" >Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte. Tous les générateurs de Lorem Ipsum sur Internet tendent à reproduire le même extrait sans fin, ce qui fait de lipsum.com le seul vrai générateur de Lorem Ipsum. Iil utilise un dictionnaire de plus de 200 mots latins, en combinaison de plusieurs structures de phrases, pour générer un Lorem Ipsum irréprochable. </p>
+        </div>
+    </div>
+
+    <!--Titre qualités-->
+    <h4 class="titre MargeT Marge" style="display: flex; justify-content: center;">Mes 3 plus grandes qualités</h4>
+    <!--Bloc qualité-->
+    <div class="bloc-qualites">
+        <!--Bloc Ambition-->
+        <div class="bloc-ambition" style="background-color: black; padding:30px; ">
+            <h5 class="titre titre-2" style="display: flex; justify-content: center; margin-top:0px">L’ambition</h5>
+            <p class="text" style="color:white">On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. </p>
+        </div>
+        <!--Bloc Persévérance-->
+        <div class="bloc-perseverance" style="background-color: black; padding:30px;">
+            <h5 class="titre titre-2" style="display: flex; justify-content: center; margin-top:0px">Persévérance</h5>
+            <p class="text" style="color:white">Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte.</p>
+        </div>
+        <!--Bloc Constance-->
+        <div class="bloc-constance" style="background-color: black; padding:30px;" >
+            <h5 class="titre titre-2" style="display: flex; justify-content: center; margin-top:0px">Constance</h5>
+            <p class="text" style="color:white">L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux. Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur version originale, accompagnée de la traduction anglaise de H. Rackham (1914).</p>
         </div>
     </div>
 </template>
@@ -20,7 +46,10 @@ import Header from "../components/Header.vue"
 
 
 @media screen and (min-width: 200px) {
-    .bloc-clement{
+
+    .titre-2{
+        font-size: 25px;
+        color:white;
     }
 
     .bloc-clement-images{
@@ -34,8 +63,8 @@ import Header from "../components/Header.vue"
     }
 
     .texte-clement{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
 }
 
     .bloc-clement-texte{
@@ -48,10 +77,34 @@ import Header from "../components/Header.vue"
     .image-pilote{
     width: 50%;
 }
+
+.bloc-qualites{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:30px
+}
+
+.bloc-ambition{
+    width: 70%;
+}
+
+.bloc-perseverance{
+    width: 70%;
+}
+
+.bloc-constance{
+    width: 70%;
+}
     
 }
 
 @media screen and (min-width: 600px) {
+
+    .titre-2{
+        font-size: 30px;
+        color:white;
+    }
 
     .bloc-clement-images{
         display: flex;
@@ -78,9 +131,26 @@ import Header from "../components/Header.vue"
     .image-pilote{
     width: 35%;
 }
+
+.bloc-ambition{
+    width: 50%;
+}
+
+.bloc-perseverance{
+    width: 50%;
+}
+
+.bloc-constance{
+    width: 50%;
+}
 }
 
 @media screen and (min-width: 1024px) {
+
+    .titre-2{
+        font-size: 35px;
+    }
+
     .bloc-clement{
         display: flex;
         align-items: center;
@@ -116,9 +186,37 @@ import Header from "../components/Header.vue"
 .texte-clement{
     width:90%;
 }
+
+.bloc-qualites{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly; 
+    gap:30px; 
+    margin:20px
+}
+
+.bloc-ambition{
+    width: 275px;
+    height: 400px;
+}
+
+.bloc-perseverance{
+    width: 275px;
+    height: 400px;
+}
+
+.bloc-constance{
+    width: 275px;
+    height: 400px;
+}
 }
 
 @media screen and (min-width: 1300px) {
+
+    .titre-2{
+        font-size: 35px;
+    }
+
     .bloc-clement{
         display: flex;
         align-items: center;
@@ -142,6 +240,21 @@ import Header from "../components/Header.vue"
 
 .texte-clement{
     width:75%;
+}
+
+.bloc-ambition{
+    width: 375px;
+    height: 450px;
+}
+
+.bloc-perseverance{
+    width: 375px;
+    height: 450px;
+}
+
+.bloc-constance{
+    width: 375px;
+    height: 450px;
 }
 }
 </style>
