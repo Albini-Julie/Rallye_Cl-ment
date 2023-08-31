@@ -1,5 +1,8 @@
 <script setup>
 import Header from "../components/Header.vue";
+import triangle from "../components/icons/triangle.vue";
+import DossierSponsors from "../components/Dossier-sponsors.vue";
+import Footer from "../components/Footer.vue";
 </script>
 
 <template>
@@ -40,10 +43,52 @@ import Header from "../components/Header.vue";
             <p class="text" style="color:white">L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux. Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur version originale, accompagnée de la traduction anglaise de H. Rackham (1914).</p>
         </div>
     </div>
+
+    <!--Titre projets futurs-->
+    <h4 class="titre MargeT Marge" style="display: flex; justify-content: center;">Mes projets futurs</h4>
+    <!--Liste des projets-->
+    <div class="projets">
+        <div class="projets-liste">
+            <div class="projets-element">
+                <triangle/>
+                <p class="text">Tournoi Grand sapin - octobre 2023</p> 
+            </div>
+            <div class="projets-element">
+                <triangle/>
+                <p class="text">Tournoi Grand sapin - octobre 2023</p> 
+            </div>
+            <div class="projets-element">
+                <triangle/>
+                <p class="text">Tournoi Grand sapin - octobre 2023</p> 
+            </div>
+            <div class="projets-element">
+                <triangle/>
+                <p class="text">Tournoi Grand sapin - octobre 2023</p> 
+            </div>
+        </div>
+        <div class="projets-image">
+            <img  class="projets-image-element" src="trophees.jpg" alt="image de trophées"/>
+        </div>
+    </div>
+
+    <!--Cadre dossier sponsor-->
+    <div class="Marge" style="display: flex; justify-content: center;">
+      <DossierSponsors/>
+    </div>
+
+    <!--Footer-->
+    <Footer/>
 </template>
 
 <style>
 
+
+.projets-element{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    margin-bottom:20px;
+}
 
 @media screen and (min-width: 200px) {
 
@@ -96,6 +141,33 @@ import Header from "../components/Header.vue";
 .bloc-constance{
     width: 70%;
 }
+
+.projets{
+}
+
+.projets-image{
+    width:100%;
+}
+
+.projets-image-element{
+    width: 80%
+}
+
+.projets-liste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projets-image{
+    display: flex;
+    justify-content: center;
+}
+
+.projets-image-element{
+    width: 100%;
+    margin-top: 30px;
+}
     
 }
 
@@ -142,6 +214,35 @@ import Header from "../components/Header.vue";
 
 .bloc-constance{
     width: 50%;
+}
+
+.projets-image{
+    display: flex;
+    justify-content: center;
+}
+
+.projets-image-element{
+    width: 70%;
+    margin-top: 30px;
+}
+
+}
+
+@media screen and (min-width: 800px){
+    .projets{
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.projets-image{
+    display: flex;
+    justify-content: center;
+    width:50%;
+}
+
+.projets-image-element{
+    width: 80%
 }
 }
 
@@ -209,6 +310,20 @@ import Header from "../components/Header.vue";
     width: 275px;
     height: 400px;
 }
+
+.projets-image{
+    width:50%;
+}
+
+.projets-image-element{
+    width: 80%
+}
+
+.projets{
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center;
+}
 }
 
 @media screen and (min-width: 1300px) {
@@ -255,6 +370,20 @@ import Header from "../components/Header.vue";
 .bloc-constance{
     width: 375px;
     height: 450px;
+}
+
+.projets-image-element{
+    width:80%;
+}
+
+.projets-image{
+    width: 40%;
+}
+
+.projets{
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center;
 }
 }
 </style>
